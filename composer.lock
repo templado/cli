@@ -1,29 +1,30 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57e6225f3c26c395918d776ec80a3dab",
+    "content-hash": "72e3a472ed3b315e4240c0e02941a6dd",
     "packages": [
         {
             "name": "templado/engine",
-            "version": "2.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/templado/engine.git",
-                "reference": "d45b070713673481a1f2670cc98dd020ed661c9c"
+                "reference": "5b92e5403237168b11d8b740593e768d215ff887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/templado/engine/zipball/d45b070713673481a1f2670cc98dd020ed661c9c",
-                "reference": "d45b070713673481a1f2670cc98dd020ed661c9c",
+                "url": "https://api.github.com/repos/templado/engine/zipball/5b92e5403237168b11d8b740593e768d215ff887",
+                "reference": "5b92e5403237168b11d8b740593e768d215ff887",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
-                "php": "^7.0"
+                "php": "^7.2|^8.0",
+                "theseer/css2xpath": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -42,8 +43,59 @@
                     "role": "Developer"
                 }
             ],
-            "description": "A pragmatic approach to templating for PHP 7.x",
-            "time": "2017-08-02T20:44:41+00:00"
+            "description": "A pragmatic approach to templating for PHP 7.2+",
+            "support": {
+                "issues": "https://github.com/templado/engine/issues",
+                "source": "https://github.com/templado/engine/tree/4.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/theseer",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-08-10T21:14:03+00:00"
+        },
+        {
+            "name": "theseer/css2xpath",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theseer/css2xpath.git",
+                "reference": "ffa0225ced4530e423aa2a3c89faae68ee93270f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theseer/css2xpath/zipball/ffa0225ced4530e423aa2a3c89faae68ee93270f",
+                "reference": "ffa0225ced4530e423aa2a3c89faae68ee93270f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Library to translate CSS selectors into XPath",
+            "support": {
+                "issues": "https://github.com/theseer/CSS2XPath/issues",
+                "source": "https://github.com/theseer/css2xpath/tree/2.0.0"
+            },
+            "time": "2019-08-28T04:35:56+00:00"
         }
     ],
     "packages-dev": [],
@@ -53,8 +105,9 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.0",
+        "php": "^7.2|^8.0",
         "ext-dom": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

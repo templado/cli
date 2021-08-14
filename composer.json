@@ -13,9 +13,9 @@
     "issues" : "https://github.com/templado/cli/issues"
   },
   "require" : {
-    "php" : "^7.0",
+    "php" : "^7.2|^8.0",
     "ext-dom" : "*",
-    "templado/engine": "^2.0"
+    "templado/engine": "^4.1"
   },
   "autoload": {
     "classmap": [
